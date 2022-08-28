@@ -1,0 +1,36 @@
+@import "variables";
+* {
+    box-sizing: border-box;
+}
+.product {
+    @include square(500px, 100px);
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    margin: 30px auto;
+    font-family: "Open Sans";
+    &_title {
+        box-sizing: border-box;
+        display: inline-block;
+        font-size: 30px;
+        vertical-align: center;
+        margin: 10px 30px;
+    }
+    &_price {
+        box-sizing: border-box;
+        text-align: center;
+        width: max-content;
+        font-size: 30px;
+        color: #fc5a5a;
+        margin-bottom: 12px;
+        transition: all 1.3s ease-in-out;
+    }
+    &_image {
+        width: 200px;
+        height: 250px;
+        text-align: center;
+        margin: 10px auto;
+        font-family: "Open Sans";
+        transition: .3s ease-in;
+    }
+}
